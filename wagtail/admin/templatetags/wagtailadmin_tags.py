@@ -1366,7 +1366,7 @@ def keyboard_shortcuts_dialog(context):
                 (_("Bold"), f"{KEYS.MOD} + b"),
                 (_("Italic"), f"{KEYS.MOD} + i"),
                 (_("Monospace (code)"), f"{KEYS.MOD} + j"),
-                (_("Strike-through"), f"{KEYS.MOD} + x"),
+                (_("Strike-through"), f"{KEYS.MOD}+ {KEYS.SHIFT} + x"),
                 (_("Superscript"), f"{KEYS.MOD} + ."),
                 (_("Subscript"), f"{KEYS.MOD} + ,"),
             ],
