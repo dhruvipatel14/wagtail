@@ -1331,7 +1331,7 @@ def keyboard_shortcuts_dialog(context):
 
     return {
         "shortcuts": {
-            ("actions-common", _("Common actions")): [
+            ("text-editing", _("Text Editing")): [
                 (_("Copy"), f"{KEYS.MOD} + c"),
                 (_("Cut"), f"{KEYS.MOD} + x"),
                 (_("Paste"), f"{KEYS.MOD} + v"),
@@ -1347,8 +1347,7 @@ def keyboard_shortcuts_dialog(context):
                     f"{KEYS.MOD} + {KEYS.SHIFT} + z" if is_mac else f"{KEYS.MOD} + y",
                 ),
             ],
-            ("actions-model", _("Actions")): [
-                (_("Show keyboard shortcuts"), "?"),
+            ("actions", _("Actions")): [
                 (_("Save changes"), f"{KEYS.MOD} + s"),
                 (_("Preview"), f"{KEYS.MOD} + p"),
                 (_("Toggle sidebar"), "["),
@@ -1358,12 +1357,14 @@ def keyboard_shortcuts_dialog(context):
                 if comments_enabled
                 else None,
             ],
-            ("rich-text-content", _("Text content")): [
-                (_("Insert or edit a link"), f"{KEYS.MOD} + k")
+            ("application", _("Application")): [
+                (_("Toggle sidebar"), "["),
+                (_("Toggle minimap"), "]"),
+                (_("Close modal dialogs (like this one)"), f"{KEYS.ESC}"),
             ],
-            ("rich-text-formatting", _("Text formatting")): [
+            ("text-formatting", _("Text formatting")): [
+                (_("Bold"), f"{KEYS.MOD} + b"),
                 (_("Italic"), f"{KEYS.MOD} + i"),
-                (_("Underline"), f"{KEYS.MOD} + u"),
                 (_("Monospace (code)"), f"{KEYS.MOD} + j"),
                 (_("Strike-through"), f"{KEYS.MOD} + x"),
                 (_("Superscript"), f"{KEYS.MOD} + ."),
