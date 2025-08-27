@@ -1365,6 +1365,7 @@ def keyboard_shortcuts_dialog(context):
             ("text-formatting", _("Text formatting")): [
                 (_("Bold"), f"{KEYS.MOD} + b"),
                 (_("Italic"), f"{KEYS.MOD} + i"),
+                (_("Insert or edit a link"), f"{KEYS.MOD} + k"),
                 (_("Monospace (code)"), f"{KEYS.MOD} + j"),
                 (_("Strike-through"), f"{KEYS.MOD}+ {KEYS.SHIFT} + x"),
                 (_("Superscript"), f"{KEYS.MOD} + ."),
