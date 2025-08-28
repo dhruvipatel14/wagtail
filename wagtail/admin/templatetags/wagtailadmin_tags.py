@@ -1350,14 +1350,13 @@ def keyboard_shortcuts_dialog(context):
             ("actions", _("Actions")): [
                 (_("Save changes"), f"{KEYS.MOD} + s"),
                 (_("Preview"), f"{KEYS.MOD} + p"),
-                (_("Toggle sidebar"), "["),
-                (_("Toggle minimap"), "]"),
-                (_("Search"), "/"),
                 (_("Add or show comments"), f"{KEYS.CTRL} + {KEYS.ALT} + m")
                 if comments_enabled
                 else None,
             ],
             ("application", _("Application")): [
+                (_("Show keyboard shortcuts"), "?"),
+                (_("Search"), "/"),
                 (_("Toggle sidebar"), "["),
                 (_("Toggle minimap"), "]"),
                 (_("Close modal dialogs (like this one)"), f"{KEYS.ESC}"),
